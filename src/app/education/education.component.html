@@ -1,0 +1,19 @@
+<h3> Education </h3>
+<table border="0">
+<ul *ngFor="let work of workExperience">
+        <li>
+                <tr>
+			<h5><td> {{work.fecha}} </td></h5> 
+                </tr>
+                <tr>
+                        <td> {{work.empresa}} </td> <td> </td>
+                </tr>
+                <ul *ngFor="let logro of work.logros">
+                        <tr>
+                                <td> {{ logro.descripcion }} </td>
+                        </tr>
+                </ul>
+        </li>
+</ul>
+<table>
+
